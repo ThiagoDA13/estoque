@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 public class MovimentoEstoqueDTO {
     private Long id;
     private Long produtoId;
+    private String produtoDescricao;
     private TipoMovimentacao tipo;
     private Double valorVenda;
     private LocalDateTime dataMovimentacao;

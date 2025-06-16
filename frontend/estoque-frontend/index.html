@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
+    <meta name="description" content="Sistema de Controle de Estoque">
+    <title>Sistema de Estoque</title>
+    
+    <link rel="icon" href="/favicon.ico">
+      </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    
+    <script type="module" src="./src/main.js"></script>
+    
+    <noscript>
+      <style>
+        #app { display: none; }
+        .nojs-message {
+          padding: 2rem;
+          text-align: center;
+          font-family: sans-serif;
+        }
+      </style>
+      <div class="nojs-message">
+        <h1>JavaScript necessário</h1>
+        <p>Este aplicativo requer JavaScript para funcionar corretamente. Por favor, habilite o JavaScript no seu navegador.</p>
+      </div>
+    </noscript>
   </body>
 </html>

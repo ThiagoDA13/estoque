@@ -105,10 +105,11 @@ public class MovimentoEstoqueService {
                 .collect(Collectors.toList());
     }
 
-    private MovimentoEstoqueDTO toDTO(MovimentoEstoque movimento) {
+    public MovimentoEstoqueDTO toDTO(MovimentoEstoque movimento) {
         MovimentoEstoqueDTO dto = new MovimentoEstoqueDTO();
         dto.setId(movimento.getId());
         dto.setProdutoId(movimento.getProduto().getId());
+        dto.setProdutoDescricao(movimento.getProduto().getDescricao()); 
         dto.setTipo(movimento.getTipo());
         dto.setValorVenda(movimento.getValorVenda());
         dto.setDataMovimentacao(movimento.getDataMovimentacao());
